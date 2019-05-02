@@ -1,10 +1,10 @@
 # Cosmose
 
-/!\ Currently not working, need a server rework
+:warning: Currently not working, need a server rework
 
 SCRUM friendly framework
 
-- Facial recognition to automaticly organize daily-scrum and book a room
-- Feelings analyzer to check how the dayli-scrum went to prevent negative attitudes
+- Facial recognition to automatically organize daily-scrum (book a room, send email, ...)
+- Feelings analyzer to check how the dayly-scrum went to prevent negative attitudes and bad atmosphere
 
-Don't forget the npm install before using the app :p
+Don't forget the npm install before using the app :P
