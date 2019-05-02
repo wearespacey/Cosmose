@@ -1,0 +1,78 @@
+body{
+    background:url("/assets/signinbgfullw.png") no-repeat;
+    background-size: cover;
+    color: #E8E8E8;
+    overflow: hidden;
+}
+
+a {
+    color: #E8E8E8;
+}
+
+.logip label, .logip input {
+    margin: 3px auto;
+    padding: 0;
+    font-size: 11pt;
+    width:50%;
+}
+
+
+.rocket-base {
+    width:500px;
+    margin:auto;
+    position: relative;
+    top:120px;
+}
+
+.form {
+    text-align: center;
+}
+
+.truckmachin{
+    height: 300px;
+    margin-left:140px;
+    background: url("/assets/launchingRemp.png") no-repeat;
+    background-size: auto 100%;
+}
+
+.truckmachin2 {
+    background:#1E1E1E;
+    position: absolute;
+    width:500px;
+    height:160px;
+    margin-top:-1px;
+    border-radius:10px;
+}
+
+.signin {
+    margin:0 auto;
+    margin-top:45px;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: darkblue;
+    color: white;
+    font-size:20pt;
+    border-radius: 10px;
+}
+.signin:hover {
+    color: silver;
+}
+
+.rocket {
+    position: absolute;
+    top: -45px;
+    height: 400px;
+    width: 200px;
+    left: 110px;
+    transition: 2s;
+    transition-property: top;
+}
+.rocket.notflying{
+    background:url("/assets/rocket.png") no-repeat;
+    background-size: auto 400px;
+}
+.rocket.isflying {
+    top:-1000px;
+    background:url("/assets/rocketflying.png") no-repeat;
+    background-size: auto 400px;
+}

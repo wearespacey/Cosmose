@@ -1,0 +1,37 @@
+<div class="container-fluid" style="height: 100% !important">
+  <div class="row">
+
+    <div id="left-panel" class="col-3">
+        <ul id="options" class="list-group">
+            <button class="btn" (click)="swapOption()">
+              <li class="list-group-item button-option active" href="#Missions" role="tab"  data-toggle="tab">Missions</li>
+            </button>
+            <button class="btn" (click)="swapOption()">
+              <li class="list-group-item button-option" href="#Team" role="tab"  data-toggle="tab">My team</li>
+            </button>
+            <button class="btn" (click)="swapOption()">
+              <li class="list-group-item button-option" href="#Cosmos" role="tab"  data-toggle="tab">My cosmos</li>
+            </button>
+          </ul>
+      <img id="mars" class="img-thumbnail" src="../../../../assets/images/mars.png">
+    </div>
+
+    <div id="right-panel" style="margin-top:0px !important" class="col-9 tab-content mt-1">
+
+      <div role="tabpanel" class="tab-pane active" id="Missions">
+        <h3 style="margin-top: 80px;margin-left: 30px;margin-bottom: 10px;">Incoming events</h3>
+        <div class="alert alert-warning" *ngIf="isLoaded && events.length == 0" style="display: inline-block;margin-left: 30px;">No mission yet !</div>
+        <div class="event" *ngFor="let event of events">
+          <h5>Room {{event.Room}} at {{event.Hour}} - {{event.Day}}</h5>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="Team">
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="Cosmos">
+      </div>
+
+    </div>
+  </div>
+</div>

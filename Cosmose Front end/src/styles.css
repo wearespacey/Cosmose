@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+html,body { height: 100%; margin: 0px; padding: 0px; }
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+
+#signature{
+  position: absolute;
+  width: 250px;
+  top: 85%;
+  right: 0;
+}

@@ -1,0 +1,21 @@
+body{
+    background:url("/assets/signupbg.png") no-repeat;
+    background-size: cover;
+    color: #E8E8E8;
+}
+
+a {
+    color: #E8E8E8;
+}
+
+.form {
+    max-width: 350px;
+    margin-top:10%;
+    margin-left:5%;
+}
+
+.btn {
+    margin-top: 20px;
+    width:auto;
+    float:right;
+}

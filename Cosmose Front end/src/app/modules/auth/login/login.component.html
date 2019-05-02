@@ -1,0 +1,15 @@
+<div class="rocket-base">
+    <div class="rocket" [class.isflying]="isFlying" [class.notflying]="!isFlying"></div>
+  <div class="truckmachin"></div>
+  <form class="form truckmachin2">
+    <div class="logip">
+      <label for="login">User</label>
+      <input class="form-control" type="text" [(ngModel)]="login" name="login" id="login" />
+    </div>
+    <div class="logip">
+      <label for="password">Password</label>
+      <input class="form-control" type="password" [(ngModel)]="password" name="password" id="password" />
+    </div>
+    <button (click)="verify()" class="btn btn-block signin">Launch !</button>
+  </form>
+</div>

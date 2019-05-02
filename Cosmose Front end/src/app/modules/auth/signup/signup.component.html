@@ -1,0 +1,23 @@
+<h1>Register</h1>
+<form class="form">
+  <div>
+    <label for="login">Login</label>
+    <input class="form-control" type="text" [(ngModel)]="login" name="login" id="login" />
+  </div>
+  <div>
+    <label for="mail">Email</label>
+    <input class="form-control" type="text" [(ngModel)]="mail" name="mail" id="mail" />
+  </div>
+  <div>
+    <label for="pass">Password</label>
+    <input class="form-control" type="text" [(ngModel)]="pass" name="pass" id="pass" />
+  </div>
+  <button class="form-control btn btn-danger" (click)="register()">Sign up</button>
+  <div class="alert alert-success" style="margin-top: 60px;" *ngIf="isRegistered">Registered successfully</div>
+</form>
+
+<img src="/assets/moon.png" style="width:200px;height:auto;position: absolute;left:5%;bottom:5%" />
+<img src="/assets/mars.png" style="width:200px;height:auto;position: absolute;right:5%;top:5%" />
+<div style="position: absolute;top:40%;right:20%;font-size:25pt;color:#0F1121;max-width: 400px">
+  <span>Please register or use your account to log in</span>
+</div>
